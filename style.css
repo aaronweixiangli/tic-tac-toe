@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+  /*  viewport units vh(viewport height), vw(viewport width), vmin(smallest btw height and width) */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  header {
+    font-size: 6vmin;
+    color: white;
+    letter-spacing: 1vmin;
+  }
+  
+  h1 {
+    color: grey;
+    font-size: 5vmin;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    border-top: 1vmin ridge cornflowerblue;
+    border-left: 1vmin ridge cornflowerblue;
+    border-right: 1vmin groove cornflowerblue;
+    border-bottom: 1vmin groove cornflowerblue;
+    border-radius: 10%;
+    padding: 2vmin;
+    height: 66vmin;
+    width: 66vmin;
+  }
+  
+  #board:hover {
+    cursor: pointer;
+  }
+  .c0, .c1 {
+    border-right: 0.5vmin ridge cornflowerblue;
+  }
+  
+  .r0, .r1 {
+    border-bottom: 0.5vmin ridge cornflowerblue;;
+  }
+  
+  button {
+    margin-top: 4vmin;
+    padding: 1.5vmin;
+    font-size: 4vmin;
+    border-radius: 4vmin;
+    border: 0.5vmin ridge cornflowerblue;
+    color: whitesmoke;
+    background-color: black;
+  }
+  
+  button:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: black;
+  }
+  
+  div {
+    color: yellow;
+    text-align: center;
+    font-size: 12vmin;
+    font-family: 'Rampart One', cursive;
+    height: 20vmin;
+    padding: 1vmin;
+  }
+  
+  div:hover {
+    background-color: rgba(4,4,11,1);
+    border-radius: 0.5vmin;
+  }
